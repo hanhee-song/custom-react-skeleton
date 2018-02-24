@@ -1,11 +1,10 @@
-var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
   context: __dirname,
   entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, "src"),
+    path: __dirname + "/src",
     filename: "bundle.js"
   },
   module: {
@@ -25,8 +24,8 @@ module.exports = {
     extensions: [".js", ".jsx", "*"]
   },
     plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    }),
-  ]
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      }),
+    ]
 };
