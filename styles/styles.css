@@ -20,8 +20,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-  font-family: 'Inconsolata', monospace; }
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -52,8 +51,7 @@ table {
 
 a {
   color: inherit;
-  text-decoration: none;
-  font-family: 'Inconsolata', monospace; }
+  text-decoration: none; }
 
 /**************************************************/
 
